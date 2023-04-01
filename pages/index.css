@@ -24,6 +24,7 @@
 .nav {
   display: flex;
   justify-content: flex-end;
+  align-items: flex-start;
 }
 
 .logo {
@@ -40,8 +41,15 @@
   margin-top: 30px;
   margin-right: 80px;
   margin-bottom: 0;
-  gap: 20px;
-  font-family: "Inter" sans-serif;
+  margin-left: auto;
+  column-gap: 20px;
+  padding: 0;
+}
+
+.nav__link {
+  color: #000;
+  text-decoration: none;
+  font-family: "Inter", Arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
