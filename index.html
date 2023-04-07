@@ -11,7 +11,7 @@
     <meta name="keywords" content="coffee, cafe. espresso, cappuccino, latte" />
     <title>Coffee Shop</title>
     <link rel="stylesheet" href="pages/index.css" />
-    <link rel="icon" type="image/png" href="favicon.png" />
+    <link rel="icon" type="image/png" href="/favicon.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -26,12 +26,9 @@
           <img
             src="./images/logo_coffee_shop.svg"
             alt="Coffee_Shop_Logo"
-            class="header__logo"
+            class="logo"
           />
           <ul class="nav__links">
-            <li>
-              <a class="nav__link" href="#menu">Menu</a>
-            </li>
             <li>
               <a class="nav__link" href="#recipes">Recipes</a>
             </li>
@@ -39,12 +36,15 @@
               <a class="nav__link" href="#reservation">Book a table</a>
             </li>
             <li>
+              <a class="nav__link" href="#menu">Menu</a>
+            </li>
+            <li>
               <a class="nav__link" href="#about">Contacts</a>
             </li>
           </ul>
         </nav>
         <h1 class="header__title">
-          <span class="header__span-accent">Specialty coffee</span> <br />
+          <span class="header__span-accent">Specialty coffee</span>
           in the Practicum Library
         </h1>
         <p class="header__description">
@@ -110,14 +110,18 @@
                 type="text"
                 name="username"
                 placeholder="Name Surname"
+                required
               />
               <label for="number" class="form__label">Number of guests</label>
               <input
                 id="number"
+                min="1"
+                max="8"
                 class="form__input"
                 type="number"
                 name="number"
                 placeholder="1-8"
+                required
               />
               <label for="date" class="form__label">Date & time</label>
               <input
@@ -125,6 +129,7 @@
                 class="form__input"
                 type="datetime-local"
                 name="date"
+                required
               />
               <label for="email" class="form__label">Your email</label>
               <input
@@ -133,15 +138,24 @@
                 type="email"
                 name="email"
                 placeholder="email@email.com"
+                required
               />
             </fieldset>
             <fieldset class="form__fieldset">
               <button type="submit" class="form__button">Book a table</button>
             </fieldset>
             <fieldset class="form__fieldset">
-              <label class="form__label form__label_checkbox_checked">
-                <input type="checkbox" class="form__checkbox" required /> I
-                agree with the terms of use
+              <label
+                class="form__label form__label_checkbox_checked"
+                for="terms-checkbox"
+              >
+                <input
+                  type="checkbox"
+                  id="terms-checkbox"
+                  class="form__checkbox"
+                  required
+                />
+                I agree with the terms of use
               </label>
             </fieldset>
           </form>
@@ -269,7 +283,7 @@
         <div class="footer__content">
           <img
             class="footer__logo"
-            src="/images/practicum_logo.svg"
+            src="images/practicum_logo.svg"
             alt="Practicum Logo"
           />
           <div class="footer__social-column">
@@ -279,7 +293,7 @@
                 <a class="footer__social-link" href="#">
                   <img
                     class="footer__social-icon"
-                    src="/images/facebook_white.svg"
+                    src="images/facebook_white.svg"
                     alt="Facebook Logo"
                   />
                   Facebook
@@ -292,7 +306,7 @@
                 >
                   <img
                     class="footer__social-icon"
-                    src="/images/instagram_white.svg"
+                    src="images/instagram_white.svg"
                     alt="Instagram Logo"
                   />
                   Instagram
@@ -301,7 +315,7 @@
             </ul>
           </div>
         </div>
-        <p class="footer__copyright">@ 2023 John Rojas</p>
+        <p class="footer__copyright">&copy; 2023 John Rojas</p>
       </footer>
     </div>
   </body>
