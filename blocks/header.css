@@ -22,8 +22,6 @@
 }
 
 .header__title {
-  display: flex;
-  flex-wrap: wrap;
   max-width: 729px;
   margin-top: 202px;
   margin-left: 80px;
@@ -32,6 +30,7 @@
   font-weight: 500;
   font-size: 60px;
   line-height: 72px;
+  z-index: 2;
 }
 
 .header__description {
@@ -50,6 +49,7 @@
   height: 568px;
   top: 124px;
   right: 5px;
+  z-index: 1;
 }
 
 .header__footer {
