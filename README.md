@@ -33,8 +33,9 @@ The website is built using **HTML**, **CSS**, and **JavaScript**.
 coming soon...
 ![Website Screenshot](link-to-your-screenshot-image)
 
-## 🔗 Live Demo
+## 🔗 Link & Live Demo
 
+github pages link : https://jrojas1202.github.io/se_project_coffeeshop/
 coming soon...
 Check out the live version of My Personal Website [here](link-to-your-live-demo).
 
